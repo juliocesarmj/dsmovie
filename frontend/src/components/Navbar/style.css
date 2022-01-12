@@ -1,0 +1,48 @@
+:root {
+  --color-text-background-blue: #fff;
+}
+header {
+  background-color: var(--color-primary);
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.dsmovie-nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dsmovie-nav-content a {
+  display: flex;
+  align-items: center;
+}
+.dsmovie-nav-content a .dsmovie-contact-container {
+  display: flex;
+  align-items: center;
+}
+.dsmovie-nav-content a .dsmovie-contact-container .dsmovie-contact-link {
+  margin-bottom: 0;
+  color: var(--color-text-background-blue);
+  margin-left: 10px;
+  transition: 0.2s;
+  padding: 10px 0;
+  font-size: 12px;
+}
+.dsmovie-nav-content a .dsmovie-contact-container .dsmovie-contact-link:hover,
+.dsmovie-nav-content h1:hover {
+  color: #afa7fa;
+}
+.dsmovie-nav-content h1 {
+  margin: 0;
+  transition: 0.2s;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-text-background-blue);
+  cursor: pointer;
+}
+
+.dsmovie-contact-container {
+  display: flex;
+  align-items: center;
+}
