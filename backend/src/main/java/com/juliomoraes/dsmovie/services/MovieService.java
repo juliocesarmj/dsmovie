@@ -6,7 +6,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.juliomoraes.dsmovie.MovieDTO;
+import com.juliomoraes.dsmovie.dto.MovieDTO;
 import com.juliomoraes.dsmovie.repositories.IMovieRepository;
 
 @Service
@@ -22,8 +22,8 @@ public class MovieService implements IMovieService {
 	}
 
 	@Override
-	public MovieDTO findById(Long idMovieDto) {
-		return this.repository.findById(idMovieDto).map(MovieDTO::new).get();
+	public MovieDTO findById(Long movieId) {
+		return this.repository.findById(movieId).map(MovieDTO::new).get();
 	}
 
 }

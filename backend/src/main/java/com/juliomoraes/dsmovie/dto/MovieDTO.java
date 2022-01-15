@@ -1,4 +1,4 @@
-package com.juliomoraes.dsmovie;
+package com.juliomoraes.dsmovie.dto;
 
 import com.juliomoraes.dsmovie.entities.Movie;
 
